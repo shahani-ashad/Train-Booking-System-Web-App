@@ -1,0 +1,237 @@
+{
+    margin:0;
+    padding:0;
+    font-family:'Poppind',sans-serif;
+    box-sizing:border-box;
+}
+
+.header{
+    width:100%;
+    background:black;
+    padding-left:11%;
+    padding-right:8%; 
+    position: relative;   
+    background-size: 93%;
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+}
+
+.top-nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:80px 0 15px;
+    border-bottom: 1px solid #bababa;
+}
+
+.top-nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.top-nav ul li a{
+   text-decoration: none;
+   color:#fff;
+   font-size:15px; 
+}
+
+.top-nav ul li a:hover{
+   color:blue;
+}
+
+.top-nav button{
+    background:rgba(248, 244, 3, 0.493);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor:pointer;
+}
+
+.top-nav button:hover{
+    background-color:black;
+}
+
+
+.side-nav{
+    position: fixed;
+    /*background: #e91e63;*/
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0;
+    background: linear-gradient(rgb(247, 32, 218),#000429,white,#00d400);
+    background-size: 100% 500%;
+    background-position: 0 40%;
+}
+
+.side-nav:hover {
+    animation: backcolor 4s linear infinite;
+}
+
+@keyframes backcolor {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -200px;
+    }
+}
+
+.side-nav .logo{
+    margin-top: 0px;
+    width: 170px;
+    cursor: pointer;
+    margin-left: 0px;
+}   
+
+.logo-text{
+    margin-bottom: 500px;
+    color: white;
+    font-family:Brush Script MT;
+    font-size: 19;
+}
+
+/* Search section styles */
+.search-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.search-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.search-section input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-section input:focus {
+    border-color: #004d00;
+}
+
+.search-section button {
+    padding: 8px 16px;
+    background-color: #004d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-section button:hover {
+    background-color: #003300;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #004d00;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.footer{
+    height:200px;
+}
+
+.footer .social-links img {
+    width: 24px;
+    margin: 0 px;
+}
+.footer-container {
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black; /* Adjust the background color as needed */
+    padding: 0px;
+    color:rgb(246, 250, 4);
+}
+
+.social-links {
+    flex: 1;
+    text-align: center; /* Center-align content for better visuals */
+}
+.copyright {
+    flex: 1 ;
+    text-align: center; /* Center-align content for better visuals */
+    color:black;
+    background-color:white;
+}
+
+.social-links img {
+    margin: 5px;
+    height: 24px; /* Adjust icon size */
+    width: 24px;
+}
+
+.social-links img:hover{
+    position: inherit;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.copyright p {
+    margin: 0px 0;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.terms{
+    color:blue;
+    font-size:11px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

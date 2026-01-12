@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK AWAY</title>
+    <style>
+        /* General Reset */
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color:#dedede;
+  color: #333;
+}
+
+
+/* Header Styling */
+.header{
+    width:100%;
+    height:10rem;
+    background:black;
+    padding-left:11%;
+    padding-right:8%; 
+    position: relative;   
+    
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+}
+
+.top-nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:80px 0 15px;
+    border-bottom: 1px solid #bababa;
+}
+
+.top-nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.top-nav ul li a{
+   text-decoration: none;
+   color:#fff;
+   font-size:20px; 
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.top-nav ul li a:hover{
+   color:blue;
+}
+
+.top-nav button{
+    background:rgba(248, 244, 3, 0.493);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor:pointer;
+}
+
+.top-nav button:hover{
+    background-color:black;
+}
+
+
+@keyframes backcolor {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -200px;
+    }
+}
+
+        .container {
+            margin: 2rem auto;
+            max-width: 800px;
+            background: rgb(91, 211, 241);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #034111;
+        }
+        h2 {
+            text-align:center;
+            color:rgb(47, 7, 75);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input, select, button {
+            padding: 0.75rem;
+            border: 1px solid #068d28;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: rgb(6, 28, 90);
+            color: rgb(247, 247, 252);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(71, 16, 175);
+        }
+
+        /* Footer Styling */
+        footer .social-links img {
+            width: 24px;
+            margin: 0 px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #131314; /* Adjust the background color as needed */
+            padding: 0px;
+            gap: px;
+            color: rgb(245, 245, 37);
+        }
+
+        .social-links {
+            flex: 1;
+            text-align: center; /* Center-align content for better visuals */
+        }
+        .copyright {
+            flex: 1 ;
+            text-align: center; /* Center-align content for better visuals */
+            color:#131314;
+            background-color:rgb(250, 250, 246);
+        }
+
+        .social-links img {
+            margin: 5px;
+            height: 24px; /* Adjust icon size */
+            width: 24px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', Times, serif;
+    
+        }
+
+        .copyright p {
+            margin: 0px 0;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .terms{
+            color:blue;
+            font-size:11px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        }
+    </style>
+    </head>
+    <body>
+            <div class="header">
+                <div class="top-nav">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About us.html">About us</a></li>
+                        <li><a href="Bookings.html">Bookings</a></li>
+                        <li><a href="Schedule.html">Schedule</a></li>
+                        <li><a href="Customer care.html">Customer care</a></li>
+                    </ul>
+                    <button>Sign in</button>
+                </div>  
+        <br>
+
+    <div class="container">
+        <h1>Railway Reservation System</h1>
+        <h2>Book Your Ticket</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="train">Select Train:</label>
+            <select id="train" name="train" required>
+                <option value="">--Select Train--</option>
+                <option value="train1">Train 1</option>
+                <option value="train2">Train 2</option>
+                <option value="train3">Train 3</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">--Select Class--</option>
+                <option value="sleeper">Sleeper</option>
+                <option value="ac">AC</option>
+                <option value="first-class">First Class</option>
+                <option value="second-class">Second Class</option>
+                <option value="third-class">Third Class</option>
+            </select>
+
+            <button class="submit">Book Now</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <br>
+                <p><B>Follow us</B></p>
+                <br>
+                <div>
+                    <a href="#"><img src="/images/whatsapp.JPG" height="auto" width="auto"></a>
+                    <a href="#"><img src="/images/twitter.PNG"></a>
+                    <a href="#"><img src="/images/facebook.PNG"></a>
+                    <a href="#"><img src="/images/instagram.JPG"></a>
+                    <br>
+                <p>FAQ | Contact us | About us</p>
+                <br>
+                <p>Email: info@bookaway.com</p>
+                <p>Address: No.2/123, Colombo, Sri Lanka</p>
+                <p>Phone: +01 234 567 88 | +01 234 567 89</p>
+                </div>
+                <br>
+                <h3><B>BOOKAWAY.COM<B></h3>
+            </div>    
+         </div>
+            <section>
+            <div class="copyright">
+                <p>© 2024 Copyright: BOOKAWAY.com</p>
+                <p class="terms"><u>Terms and conditions</u></p>
+            </div>
+        </section>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+    </body>
+    </html>
